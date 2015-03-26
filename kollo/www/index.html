@@ -30,48 +30,66 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-		<div id="form">
-			<select>
-				<option>Period 1</option>
-				<option>Period 2</option>
-				<option>Period 3</option>
-			</select>
+		<header>
+			<img class="logo" src="img/logo.png" />
+		</header>
+		<div id="period" class="page">
+			<h1>Välj kolloperiod</h1>
 			<div>
-				<label for="day1">Dag 1:</label><input id="day1" type="time" placeholder="HH:MM">
+				<select id="period">
+					<option>--Välj period--</option>
+					<option value="1">Period 1</option>
+					<option value="2">Period 2</option>
+					<option value="3">Period 3</option>
+				</select>
+			</div>
+		</div>
+		<div id="form" class="page">
+			<h1>Fyll i tider</h1>
+			<div>
+				<label for="day1">Dag 1:</label><input id="day1" type="time" placeholder="HH:MM"><input id="day1" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day2">Dag 2:</label><input id="day2" type="time" placeholder="HH:MM">
+				<label for="day2">Dag 2:</label><input id="day2" type="time" placeholder="HH:MM"><input id="day2" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day3">Dag 3:</label><input id="day3" type="time" placeholder="HH:MM">
+				<label for="day3">Dag 3:</label><input id="day3" type="time" placeholder="HH:MM"><input id="day3" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day4">Dag 4:</label><input id="day4" type="time" placeholder="HH:MM">
+				<label for="day4">Dag 4:</label><input id="day4" type="time" placeholder="HH:MM"><input id="day4" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day5">Dag 5:</label><input id="day5" type="time" placeholder="HH:MM">
+				<label for="day5">Dag 5:</label><input id="day5" type="time" placeholder="HH:MM"><input id="day5" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day6">Dag 6:</label><input id="day6" type="time" placeholder="HH:MM">
+				<label for="day6">Dag 6:</label><input id="day6" type="time" placeholder="HH:MM"><input id="day6" type="time" placeholder="HH:MM">
 			</div>
 			<div>
-				<label for="day7">Dag 7:</label><input id="day7" type="time" placeholder="HH:MM">
+				<label for="day7">Dag 7:</label><input id="day7" type="time" placeholder="HH:MM"><input id="day7" type="time" placeholder="HH:MM">
+			</div>
+			<div>
+				<label for="day8">Dag 8:</label><input id="day8" type="time" placeholder="HH:MM"><input id="day8" type="time" placeholder="HH:MM">
+			</div>
+			<div>
+				<label for="day9">Dag 9:</label><input id="day9" type="time" placeholder="HH:MM"><input id="day9" type="time" placeholder="HH:MM">
+			</div>
+			<div>
+				<label for="day10">Dag 10:</label><input id="day10" type="time" placeholder="HH:MM"><input id="day10" type="time" placeholder="HH:MM">
+			</div>
+			<div>
+				<label for="day11">Dag 11:</label><input id="day11" type="time" placeholder="HH:MM"><input id="day11" type="time" placeholder="HH:MM">
+			</div>
+			<div>
+				<label for="day12">Dag 12:</label><input id="day12" type="time" placeholder="HH:MM"><input id="day12" type="time" placeholder="HH:MM">
 			</div>
 			
-			<button>Skicka</button>
+			<button id="cancel" class="cancel">Avbryt</button>
+			<button id="submit" class="submit">Skicka</button>
+			
 			
 		</div>
+		
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>
